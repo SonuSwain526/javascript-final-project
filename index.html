@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whather application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="sss.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container">
+        <section class="search-section">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <form id="input1" action=""> <input class="input" type="text" placeholder="Seach your city..."></form>
+           
+        </section>
+        <section class="whather-data">
+            <h2 class="place"></h2>
+            <p class="date-time"></p>
+            <p class="event"></p>
+            <div class="icon"></div>
+            <div class="temp">
+                <p class="temprature"></p>
+                <div class="min-max">
+                    <div class="min"></div>
+                    <div class="max"></div>
+                </div>
+            </div>
+        </section>
+        <section class="extra-functions">
+            <div class="card">
+                <div class="logo">
+                    <i class="fa-solid fa-temperature-three-quarters"></i>
+                </div>
+                <div class="card-data">
+                    <p>Feels Like</p>
+                    <p class="fellos-like"></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="logo">
+                    <i class="fa-brands fa-wpressr"></i>
+                </div>
+                <div class="card-data">
+                    <p>Pressure</p>
+                    <p class="pressure"></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="logo">
+                    <i class="fa-solid fa-wind"></i>
+                </div>
+                <div class="card-data">
+                    <p>Wind</p>
+                    <p class="wind"></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="logo">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <div class="card-data">
+                    <p>Humadity</p>
+                    <p class="gumidity"></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
